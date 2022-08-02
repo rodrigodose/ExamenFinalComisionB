@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Pagina principal</title>
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Librería sin nombre</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Galeria</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Historia</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+   
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+
+                <body onload="mostrarSaludo()">
+       
+                        <div id="saludo" class="mb-5 mt-5">
+                        
+                            <img name="tiempo">
+                        
+                            <div id="txtsaludo"></div>
+                        
+                        </div>
+
+
+                        <script>
+                                function mostrarSaludo(){
+                                
+                                fecha = new Date(); 
+                                hora = fecha.getHours();
+
+                                if(hora >= 0 && hora < 12){
+                                texto = "Buenos Días";
+                                imagen = "img/dia.png";
+                                }
+
+                                if(hora >= 12 && hora < 18){
+                                texto = "Buenas Tardes";
+                                imagen = "img/tarde.png";
+                                }
+
+                                if(hora >= 18 && hora < 24){
+                                texto = "Buenas Noches";
+                                imagen = "img/noche.png";
+                                }
+
+                                document.images["tiempo"].src = imagen;
+
+                                document.getElementById('txtsaludo').innerHTML = texto;
+
+                                }
+                        </script>
+
+                </body>
+                <h3 class="masthead-heading text-uppercase mb-0">Te damos la bienvenida a</h3>
+                
+                <!--<img class="masthead-avatar mb-5" src="https://www.psicoactiva.com/wp-content/uploads/puzzleclopedia/Libros-codificados-300x262.jpg" alt="..." /> -->
+ 
+               <br>
+
+                <h1 class="masthead-heading text-uppercase mb-0">Mi libreria</h1>
+          
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+              
+                <p class="masthead-subheading font-weight-light mb-0">
+                    ¡ENCONTRÁ TUS PRODUCTOS FÁCILMENTE!</p>
+            </div>
+        </header>
+      
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+      
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Galeria</h2>
+          
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <table>
+                    <div class="row justify-content-center">
+  
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <h5 class="text-center" >Libreria</h5>
+                        
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                    
+                              <a href="libreria.html"><img class="img-fluid" src="https://d22fxaf9t8d39k.cloudfront.net/a268e29883562eebdbb3d9ba09968e1a51149c47bd3ddbc19971ccb3649e11f53691.png"alt="Flower"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <h5 class="text-center" >Papeleria</h5>
+                        
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                    
+                              <a href="papeleria.html"><img class="img-fluid" src="https://d22fxaf9t8d39k.cloudfront.net/5f00994778089eb0eb36341ef75c2be3718c17ba3749d613688bc8c3ccf6c6de3691.png"alt="Flower"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <h5 class="text-center" >Regalería</h5>
+                        
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                    
+                              <a href="regaleria.html"><img class="img-fluid" src="https://d22fxaf9t8d39k.cloudfront.net/cdf2b1dceec415aab7081d3424962dd3c135cc0ac6495258792be85b0de563773691.png"alt="Flower"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <h5 class="text-center" >Cartucheras</h5>
+                        
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                    
+                              <a href="cartucheras.html"><img class="img-fluid" src="https://d22fxaf9t8d39k.cloudfront.net/3345c6870a24d472a52db50ebbcab570d2d40622b1df8a6b16d3a67bbfd03ffb3691.png"alt="Flower"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <h5 class="text-center" >Eco</h5>
+                        
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                    
+                              <a href="eco.html"><img class="img-fluid" src="https://d22fxaf9t8d39k.cloudfront.net/7399c3b00a63399f29492b401b1ac9ff997032da3f477fdd76cab19cf3689f953691.png"alt="Flower"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <h5 class="text-center" >Mochilas</h5>
+                        
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                    
+                              <a href="mochilas.html"><img class="img-fluid" src="https://d22fxaf9t8d39k.cloudfront.net/479ab2874089a0c2c28a9629af793001e0996ab50096c75decb104c4887274a53691.png"alt="Flower"></a>
+                        </div>
+                    </div>
+
+                </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+ 
+                <h2 class="page-section-heading text-center text-uppercase text-white">Libreria SinNombre</h2>
+
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+        
+                <aside>
+                    <div class="text-center mt-4">
+                     
+                         <iframe width="560" height="315" src="https://www.youtube.com/embed/zMMcP4lHssg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                   </aside>
+
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">Esta librería fué inventada hace unos minutos por lo cual no tiene niguna historia. Pero para generar contenido estoy escribiendo algo acá mismo, Lo malo es que no tengo mucha imaginación y no sé que poner </p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Entonces te imaginarás que si en el texto de la izquierda no puse nada interesante, acá tengo menos idea de que escribir, por lo que solamente voy a escribir unas cuantas palabras más.</p></div>
+                </div>
+    
+                <div class ="text-center mt-4" id="Parabajar">
+                    <a class="btn btn-xl btn-outline-light" target="_blank" href="martinfierro.pdf">
+                        <i class="fas fa-download me-2"></i>
+                        Catalogo completo
+                       
+                    </a>
+                </div>
+             <br>   
+   
+            </div>
+
+
+
+           
+        </section>
+
+
+   
+
+
+
+
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Localidad</h4>
+                        <p class="lead mb-0">
+                            San Nicolás de los arroyos
+                            <br />
+                            CP:2900 Buenos Aires.
+                        </p>
+                    </div>
+   
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Ponete en contacto conmigo</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/rodrigo.dose"role="button" rel="nofollow"target="_blank"><i class="fab fa-fw fa-facebook-f" ></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://api.whatsapp.com/send?phone=3364239498&text=hola,%20Enviame un mensaje"role="button" rel="nofollow"target="_blank"><i class="fab fa-fw fa-whatsapp" ></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/DoseRodrigo"role="button" rel="nofollow"target="_blank"><i class="fab fa-fw fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/rodrigo.dose/"role="button" rel="nofollow"target="_blank"><i class="fab fa-fw fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/rodrigo-dose-207937149/"role="button" rel="nofollow"target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="mailto: rodrigodose@gmail.com?subject=Questions"role="button" rel="nofollow"target="_blank"><i class="fa fa-envelope" role="button" rel="nofollow"></i></a>
+                    </div>
+        
+                </div>
+            </div>
+        </footer>
+
+
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; Todos los derechos reservados</small></div>
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="js/scripts.js"></script>
+
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

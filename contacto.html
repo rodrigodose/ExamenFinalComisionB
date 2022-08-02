@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet" />
+    <title>Contacto</title>
+</head>
+<body>
+    
+    <section class="page-section" id="contact">
+        <div class="container">
+        
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contactame</h2>
+          
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+       
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+             
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                            <label for="name">Nombre completo</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Un nombre es requerido.</div>
+                        </div>
+             
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                            <label for="email">Correo electronico</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">Un correo electronico es requerido.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">El correo no es valido.</div>
+                        </div>
+                
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                            <label for="phone">Numero de telefono</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">Un número de teléfono es requerido.</div>
+                        </div>
+               
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                            <label for="message">Mensaje</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">Un mensaje es requerido.</div>
+                        </div>
+
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Formulario subido exitosamente</div>
+                               Para archivar esto tenés que loguearte.
+                                <br />
+                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                            </div>
+                        </div>
+                
+                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error de envio</div></div>
+                  
+                        <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Enviar</button>
+                        <input type="button" class="btn btn-primary btn-xl "  onclick="history.back()" name="volver atrás" value="Volver">
+
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+</body>
+</html>
